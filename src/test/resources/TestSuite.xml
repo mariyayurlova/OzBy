@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="TestingOzBy" verbose="1">
+	
+	<test name="OzBy Test Sign" preserve-order="true">
+		<parameter name="login" value="i-manynia@mail.ru"/>
+		<parameter name="password" value="ex9zZ3"/>
+		<parameter name="name" value="oz8481891"/>
+		<parameter name="inquiry" value="Мастер и Маргарита"/>
+
+		<classes>
+ 			<class name="tests.OzBySignTest" />
+        </classes>
+	</test>
+
+	<test name="OzBy Search" preserve-order="true">
+		<parameter name="inquiry" value="Мастер и Маргарита"/>
+
+		<classes>
+			<class name="tests.OzBySearchTest" />
+		</classes>
+	</test>
+
+	<test name="OzBy Selection" preserve-order="true">
+		<parameter name="menu" value="Книги"/>
+		<parameter name="catalog" value="Детская литература"/>
+		<parameter name="nextCatalog" value="Книги для родителей"/>
+		<parameter name="author" value="Евгений Комаровский"/>
+		<parameter name="price" value="50000"/>
+
+		<classes>
+			<class name="tests.OzBySelectionTest" />
+		</classes>
+	</test>
+
+	<test name="OzBy Sort" preserve-order="true">
+		<parameter name="menu" value="Книги"/>
+		<parameter name="catalog" value="Детская литература"/>
+		<parameter name="nextCatalog" value="Книги для родителей"/>
+		<parameter name="name" value="Сначала дешёвые"/>
+
+		<classes>
+			<class name="tests.OzBySortPrice" />
+		</classes>
+	</test>
+
+	<test name="OzBy Add" preserve-order="true">
+		<parameter name="inquiry" value="Мастер и Маргарита"/>
+
+
+		<classes>
+			<class name="tests.OzByAddTest" />
+		</classes>
+	</test>
+
+	<test name="OzBy LogOut" preserve-order="true">
+		<parameter name="login" value="i-manynia@mail.ru"/>
+		<parameter name="password" value="ex9zZ3"/>
+
+		<classes>
+			<class name="tests.OzByLogOut" />
+		</classes>
+	</test>
+</suite>
